@@ -19,7 +19,16 @@ Immediate:
     -> finished 11/12, 5 - 7:30 am
 
     3) Make login / user page
-        -> this will require setting up a database
+    
+        -> probably need to create second project (see org made for project)
+            (because the login page functions outside of the client page / portal logic)
+        -> DO WEBPACK TUTORIAL WHILE SETTING UP LOGIN 
+
+        ... then just take the bundle.js and stick it in the client app for heroku 
+            deployment / docker purposes 
+            (note: do i need to build in the docker container if i build beforhand?)
+
+        -> this will require setting up a database (for userpage, not login cookies)
 
         -> just deploy to Heroku when the front end is done first. 
 
