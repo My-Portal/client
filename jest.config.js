@@ -2,5 +2,5 @@
 // Sync object
 module.exports = {
   verbose: true,
-  setupFilesAfterEnv: ['./spec/beforeEveryJestES5.js']
+  setupFilesAfterEnv: ['./spec/beforeEveryJestES5.js'],
 };

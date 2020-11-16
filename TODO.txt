@@ -32,11 +32,18 @@ Immediate:
 
         -> just deploy to Heroku when the front end is done first. 
 
+            -> I downloaded some sick ass lotr svg files to use with particle.js
+			also, see my particles.json config
+			
+
     3.5) Express server cleanup 
         (/dist filename logic & redirects if 404 not found... 
            -> which I have to handle with react-router, not express. gah.)
 
             google: "react-router + express"
+
+    3.9) CREATE TESTS
+        * figure out which tests to write here *
 
     4) add other APIs and features for the hell of it. 
         maps APIs
@@ -58,6 +65,8 @@ Immediate:
     TEST: will using a styles.js file with no duplicates actually affect performance?? (prob not if not used a ton.)
 
     
+    
+
 === Deployment options ===
 
     -> use heroku + postgres + lambda in docker?

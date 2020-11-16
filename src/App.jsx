@@ -16,17 +16,15 @@ import { withStyles } from '@material-ui/core/styles';
 // import { withTheme } from '@material-ui/styles';
 
 // Material-ui compoonents
-import {
-  CssBaseline,
-  AppBar,
-  Toolbar,
-  Drawer,
-  List,
-  Divider,
-  IconButton,
-  Badge,
-  Typography,
-} from '@material-ui/core';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Drawer from '@material-ui/core/Drawer';
+import List from '@material-ui/core/List';
+import Divider from '@material-ui/core/Divider';
+import IconButton from '@material-ui/core/IconButton';
+import Badge from '@material-ui/core/Badge';
+import Typography from '@material-ui/core/Typography';
 
 // icons -> need full import string, sadly
 import MenuIcon from '@material-ui/icons/Menu';

@@ -12,8 +12,25 @@ const config = {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        use: 'babel-loader',
         exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          query: {
+            plugins: [
+              [
+                require('babel-plugin-transform-imports'),
+                {
+                  'my-library': {
+                    transform(importName, matches) {
+                      return `my-library/etc/${importName.toUpperCase()}`;
+                    },
+                    preventFullImport: true,
+                  },
+                },
+              ],
+            ],
+          },
+        },
       },
       {
         test: /\.css$/,
@@ -35,10 +52,7 @@ const config = {
     ],
   },
   resolve: {
-    extensions: [
-      '.js',
-      '.jsx',
-    ],
+    extensions: ['.js', '.jsx'],
   },
   devServer: {
     historyApiFallback: true,
