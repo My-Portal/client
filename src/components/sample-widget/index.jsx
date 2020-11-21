@@ -26,10 +26,37 @@ const dashboard = function Dashboard(props) {
           <Grid container spacing={3}>
             {/* Chart */}
             <Grid item xs={12} md={8} lg={9}>
-              <Paper className={fixedHeightPaper}>
+              <Paper
+                className={props.classes.paper}
+                style={{ 'min-height': '240px' }}
+              >
                 {/* Not working:  */}
                 {/* <Chart /> */}
-                HELLO WORLD!!!
+                <div style={{ flex: 1 }}>
+                  As you can see, the widget components currently built out in this portal
+                  are simply composed of dummy data.
+                  <br />
+                  <br />
+                  Currently this is merely a container written in React using material ui
+                  and react-router and served by express (node.js) on a Docker container
+                  running on Heroku.
+                  <br />
+                  <br />
+                  I am in the process of rewritting a couple versions of this to optimize
+                  the code: for instance, using next.js for server side rendering.
+                  I also have the firebase authentication
+                  code written out, but am currently having fun theming it so I
+                  { ' haven\'t ' }
+                  deployed that yet either.
+                </div>
+                <br />
+                <span>
+                  See
+                  { ' ' }
+                  <a href="https://desolate-journey-88560.herokuapp.com/">here</a>
+                  { ' ' }
+                  for an example of the authentication, unstyled.
+                </span>
               </Paper>
             </Grid>
             {/* Recent Deposits */}

@@ -35,17 +35,21 @@ Immediate:
             -> I downloaded some sick ass lotr svg files to use with particle.js
 			also, see my particles.json config
 			
+    4) REMAKE WITH CREATE REACT APP (for perofamnce optimizations)
+        can also try with gatsby and next.js
 
-    3.5) Express server cleanup 
+    
+
+    5) Express server cleanup 
         (/dist filename logic & redirects if 404 not found... 
            -> which I have to handle with react-router, not express. gah.)
 
             google: "react-router + express"
 
-    3.9) CREATE TESTS
+    5.5) CREATE TESTS
         * figure out which tests to write here *
 
-    4) add other APIs and features for the hell of it. 
+    6) add other APIs and features for the hell of it. 
         maps APIs
         callendar api 
         google sheets oAuth 

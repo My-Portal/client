@@ -22,15 +22,15 @@ export const mainListItems = (
         test link
       </Link>
     </div> */}
-    <Link to="/" style={{ textDecoration: 'none' }}>
+    <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>
       <ListItem button>
         <ListItemIcon>
           <DashboardIcon />
         </ListItemIcon>
-        <ListItemText primary="Dashboard" style={{ textDecoration: 'none' }} />
+        <ListItemText primary="Dashboard" />
       </ListItem>
     </Link>
-    <Link to="/test" style={{ textDecoration: 'none' }}>
+    <Link to="/home" style={{ textDecoration: 'none', color: 'black' }}>
       <ListItem button>
         <ListItemIcon>
           <AllInboxIcon />
@@ -38,14 +38,16 @@ export const mainListItems = (
         <ListItemText primary="Emails" />
       </ListItem>
     </Link>
-    <ListItem button>
-      <ListItemIcon>
-        <CalendarTodayIcon />
-      </ListItemIcon>
-      <ListItemText primary="Appointment" />
-    </ListItem>
+    <Link to="/test" style={{ textDecoration: 'none', color: 'black' }}>
+      <ListItem button>
+        <ListItemIcon>
+          <CalendarTodayIcon />
+        </ListItemIcon>
+        <ListItemText primary="Appointment" />
+      </ListItem>
+    </Link>
     {/* TODO: restyle the onclick to not be red, dammit */}
-    <Link to="/home" style={{ textDecoration: 'none' }}>
+    <Link to="/home" style={{ textDecoration: 'none', color: 'black' }}>
       <ListItem button>
 
         <ListItemIcon>
@@ -66,14 +68,15 @@ export const mainListItems = (
 // re-purpose with different entries later
 export const secondaryListItems = (
   <div>
-    <ListSubheader inset>Saved reports</ListSubheader>
+    <ListSubheader inset> Next Category</ListSubheader>
+    {/* add icon here */}
     <ListItem button>
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
       <ListItemText primary="Current month" />
     </ListItem>
-    <ListItem button>
+    {/* <ListItem button>
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
@@ -84,6 +87,6 @@ export const secondaryListItems = (
         <AssignmentIcon />
       </ListItemIcon>
       <ListItemText primary="Year-end sale" />
-    </ListItem>
+    </ListItem> */}
   </div>
 );
